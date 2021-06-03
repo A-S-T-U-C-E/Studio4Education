@@ -3,7 +3,7 @@ v0.9.0
 
 v0.8.1
 - finish text blocks translation in Arudino code
-- add skecth name field to save file (WIP: filled when open a file)
+- add sketch name field to save file (WIP: filled when open a file)
 
 v0.8.0
 - modify UI to add menus for less used commands

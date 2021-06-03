@@ -1,0 +1,72 @@
+{
+  "name": "@blockly/plugin-typed-variable-modal",
+  "version": "3.1.17",
+  "description": "A Blockly plugin to create a modal for creating typed variables.",
+  "scripts": {
+    "audit:fix": "blockly-scripts auditFix",
+    "build": "blockly-scripts build",
+    "clean": "blockly-scripts clean",
+    "lint": "blockly-scripts lint",
+    "predeploy": "blockly-scripts predeploy",
+    "prepublishOnly": "npm run clean && npm run build",
+    "start": "blockly-scripts start",
+    "test": "blockly-scripts test"
+  },
+  "main": "./dist/index.js",
+  "module": "./src/index.js",
+  "unpkg": "./dist/index.js",
+  "author": "Blockly Team",
+  "keywords": [
+    "blockly",
+    "modal",
+    "typed variables"
+  ],
+  "homepage": "https://github.com/google/blockly-samples/tree/master/plugins/typed-variable-modal#readme",
+  "bugs": {
+    "url": "https://github.com/google/blockly-samples/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/google/blockly-samples.git",
+    "directory": "plugins/typed-variable-modal"
+  },
+  "license": "Apache-2.0",
+  "directories": {
+    "dist": "dist",
+    "src": "src"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "@blockly/dev-scripts": "^1.2.6",
+    "@blockly/dev-tools": "^2.3.1",
+    "blockly": "^5.20210325.1",
+    "jsdom": "16.6.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^8.4.0",
+    "sinon": "11.1.1"
+  },
+  "peerDependencies": {
+    "blockly": ">3.20200625.0"
+  },
+  "dependencies": {
+    "@blockly/plugin-modal": "^2.1.18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://wombat-dressing-room.appspot.com"
+  },
+  "eslintConfig": {
+    "extends": "@blockly/eslint-config"
+  },
+  "engines": {
+    "node": ">=8.17.0"
+  },
+  "browserslist": [
+    "defaults",
+    "IE 11",
+    "IE_Mob 11"
+  ]
+}

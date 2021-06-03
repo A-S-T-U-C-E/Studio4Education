@@ -167,3 +167,14 @@ var booleanVariablesCallBack = function (currWorkspace) {
     }
     return xmlList;
 };
+
+const createFlyout = function(workspace) {
+    let xmlList = [];
+    const button = document.createElement('button');
+    button.setAttribute('text', 'Create Typed Variable');
+    button.setAttribute('callbackKey', 'createTypedVariable');
+    xmlList.push(button);
+    const blockList = Blockly.VariablesDynamic.flyoutCategoryBlocks(workspace);
+    xmlList = xmlList.concat(blockList);
+    return xmlList;
+};

@@ -267,6 +267,19 @@ var toolbox_standard = {
             ]
         }, {
             "kind": "category",
+            "name": "TYPED_VARIABLES",
+			"toolboxitemid": "TYPED_VARIABLES",
+			"custom": "TYPED_VARIABLES",
+			"level": "1",
+			"levels": "1,2,3",
+            "categorystyle": "variable_category",
+            "cssConfig": {
+              "icon": "customIcon fa fa-question",
+              "openicon": "customIcon fas fa-caret-right",
+              "closedicon": "customIcon fas fa-caret-down"
+            }
+        }, {
+            "kind": "category",
             "name": "%{BKY_CATFUNCTIONS}",
 			"toolboxitemid": "FUNCTIONS",
 			"level": "1",

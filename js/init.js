@@ -158,6 +158,10 @@ Code.init = function () {
     Code.workspace.registerToolboxCategoryCallback('VARIABLE_TYPED_NUM', numVariablesCallBack);
     Code.workspace.registerToolboxCategoryCallback('VARIABLE_TYPED_TEXT', textVariablesCallBack);
     Code.workspace.registerToolboxCategoryCallback('VARIABLE_TYPED_BOOLEAN', booleanVariablesCallBack);
+    
+    Code.workspace.registerToolboxCategoryCallback('TYPED_VARIABLES', createFlyout);
+    const typedVarModal = new TypedVariableModal(Code.workspace, 'createTypedVariable', [["INT", "int"], ["STRING", "String"]]);
+    typedVarModal.init();
 
     Code.workspace.configureContextMenu = configureContextualMenu.bind(Code.workspace);
 	Code.buildControlPanelForToolbox();

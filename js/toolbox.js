@@ -21,12 +21,13 @@ jsonToolbox["contents"][4] = toolbox_standard["contents"][4];
 jsonToolbox["contents"][5] = toolbox_standard["contents"][5];
 jsonToolbox["contents"][6] = toolbox_standard["contents"][6];
 jsonToolbox["contents"][7] = toolbox_standard["contents"][7];
-jsonToolbox["contents"][8] = toolbox_ds18b20["contents"][0];
-jsonToolbox["contents"][9] = toolbox_relay["contents"][0];
-jsonToolbox["contents"][10] = toolbox_ST["contents"][0];
-jsonToolbox["contents"][11] = toolbox_servo["contents"][0];
-jsonToolbox["contents"][12] = toolbox_X_NUCLEO_IKS01A3["contents"][0];
-jsonToolbox["contents"][13] = toolbox_arrowheadframework["contents"][0];
+jsonToolbox["contents"][8] = toolbox_standard["contents"][8];
+jsonToolbox["contents"][9] = toolbox_ds18b20["contents"][0];
+jsonToolbox["contents"][10] = toolbox_relay["contents"][0];
+jsonToolbox["contents"][11] = toolbox_ST["contents"][0];
+jsonToolbox["contents"][12] = toolbox_servo["contents"][0];
+jsonToolbox["contents"][13] = toolbox_X_NUCLEO_IKS01A3["contents"][0];
+jsonToolbox["contents"][14] = toolbox_arrowheadframework["contents"][0];
 
 /**
  * Build the toolbox using toolbox definition in json files
@@ -38,15 +39,15 @@ Code.buildToolbox = function() {
 	// set the default toolbox if none
 	if (toolboxIds === undefined || toolboxIds === "") {
 		if (boardSelected) {
-			toolboxIds = 'LOGIC,LOOPS,MATH,TEXT,LIST,COLOUR,VARIABLES,FUNCTIONS,BOARD';
+			toolboxIds = 'LOGIC,LOOPS,MATH,TEXT,LIST,COLOUR,VARIABLES,TYPED_VARIABLES,FUNCTIONS,BOARD';
 			window.localStorage.defaultToolbox = 1;
 		}
 		else {
-			toolboxIds = 'LOGIC,LOOPS,MATH,TEXT,LIST,COLOUR,VARIABLES,FUNCTIONS';
+			toolboxIds = 'LOGIC,LOOPS,MATH,TEXT,LIST,COLOUR,VARIABLES,TYPED_VARIABLES,FUNCTIONS';
 			window.localStorage.defaultToolbox = 0;
 		}
 	} else {
-		toolboxIds += ',LOGIC,LOOPS,MATH,TEXT,LIST,COLOUR,VARIABLES,FUNCTIONS,BOARD';
+		toolboxIds += ',LOGIC,LOOPS,MATH,TEXT,LIST,COLOUR,VARIABLES, TYPED_VARIABLES,FUNCTIONS,BOARD';
 			window.localStorage.defaultToolbox = 2;
 	}
 	//save config in local browser storage for rendering in menu categories list

@@ -1,0 +1,2 @@
+@blockly/plugin-strict-connection-checker: A Blockly plugin that makes connection checks strict.
+@blockly/plugin-typed-variable-modal: A plugin to create a modal for creating typed variables.
